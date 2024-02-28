@@ -15,5 +15,5 @@ phases:
   post_build:
     commands:
       - echo "Updating files in the S3 bucket..."
-      - aws s3 sync dist/properties-app/browser s3://angular-properties-app-s3j--delete
+      - aws s3 sync dist/properties-app/browser s3://angular-properties-app-s3final --delete
 
